@@ -1,9 +1,9 @@
 $(document).ready(function() {
     $('#registerForm').on('submit', function(event) {
-        event.preventDefault(); // Stop form from submitting normally
+        event.preventDefault();
 
         $.ajax({
-            url: 'registeration.php',  // this is your PHP processing file
+            url: 'registeration.php',
             method: 'POST',
             data: $(this).serialize(),
             success: function(response) {

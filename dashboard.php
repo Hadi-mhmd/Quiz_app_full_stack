@@ -127,9 +127,32 @@ function load_previous() {
 }
 
 // Function to load the next question
+// function load_next() {
+
+//   questionno++; // Increment the question number
+//   load_questions(questionno); // Load the next question
+// }
 function load_next() {
-  questionno++; // Increment the question number
-  load_questions(questionno); // Load the next question
+  var totalQuestions = parseInt(document.getElementById("total_que").innerHTML);
+  
+  // Check if this is the last question
+  if (questionno >= totalQuestions) {
+    // Redirect to result page
+    window.location = "result.php";
+  } else {
+    questionno++; // Increment the question number
+    load_questions(questionno); // Load the next question
+  }
+}
+
+function radioclick(radiovalue,questionno){
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+    }
+  };
+  xmlhttp.open("GET", "forajax/save_answer_in_session.php?questionno="+ questionno +"&value1="+radiovalue, true);
+  xmlhttp.send(null);
 }
 </script>
 
