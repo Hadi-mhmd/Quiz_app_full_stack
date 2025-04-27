@@ -20,7 +20,7 @@ if (session_status() == PHP_SESSION_NONE) {
     <header class="header">
       <ul class="nav-menu">
         <li><a href="#">Select Exam</a></li>
-        <li><a href="#">Last Result</a></li>
+        <li><a href="view_old_result.php">Last Result</a></li>
         <li><a href="logout.php">Logout</a></li>
         <li class="username">
         <span style="color: green;"><?php echo $_SESSION["username"]; ?></span>

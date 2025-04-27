@@ -16,6 +16,7 @@
         <li><a href="#">Dashboard</a></li>
         <li><a href="add_edit_exam_question.php">Add and Edit Exam</a></li>
         <li><a href="add_edit_question.php">Add and Edit Exam Questions</a></li>
-        <li><a href="#">Logout</a></li>
+        <li><a href="user_results.php">All user results</a></li>
+        <li><a href="admin_login.html">Logout</a></li>
     </ul>
 </div>
