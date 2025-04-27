@@ -1,0 +1,44 @@
+//db text to build required table i built them using phpmyAdmin in wamp
+Table admin {
+  id int [pk]
+  username varchar(100)
+  password varchar(100)
+}
+
+Table exam {
+  id int [pk]
+  category varchar(100)
+  exam_time_in_min varchar(5)
+}
+
+Table questions {
+  id int [pk]
+  question_no int
+  question text
+  opt1 varchar(255)
+  opt2 varchar(255)
+  opt3 varchar(255)
+  opt4 varchar(255)
+  answer varchar(255)
+  category varchar(255)
+}
+
+Table registration {
+  id int [pk]
+  firstname varchar(50)
+  lastname varchar(50)
+  username varchar(50)
+  password varchar(50)
+  email varchar(50)
+  contact varchar(50)
+}
+
+Table result {
+  id int [pk]
+  username varchar(100)
+  exam_type varchar(100)
+  total_question varchar(10)
+  correct_answer varchar(10)
+  wrong_answer varchar(10)
+  exam_time varchar(50)
+}
